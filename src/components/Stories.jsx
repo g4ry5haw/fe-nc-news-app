@@ -2,6 +2,7 @@ import React from 'react';
 import {useState, useEffect} from 'react'
 import "../App.css";
 import { getArticles } from '../utils/api';
+import { Link } from 'react-router-dom';
 
 const Stories = () => {
 
@@ -19,7 +20,8 @@ useEffect(()=> {
                 return (
                 <div className='articlesList__article' key={article_id}>
                     <h4>{topic}</h4> 
-                    <h3>{title}</h3>
+                    <Link to={`/articles/${article_id}`}><h3>{title}</h3></Link>
+                    {/* <h3>{title}</h3> */}
                     <p>{body}</p>
                 </div>
             )})}
