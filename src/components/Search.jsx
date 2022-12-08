@@ -3,7 +3,7 @@ import "../App.css";
 
 const Search = () => {
     return (
-        <form className='searchBox'>
+        <form className='nav-header-searchBox'>
             <label>
             <input placeholder="Search NC News" type="text" />
             </label>

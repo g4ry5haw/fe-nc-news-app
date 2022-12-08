@@ -1,10 +1,11 @@
 import "../App.css";
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Title = () => {
     return (
-        <div className="title">
-            NC News Logo
+        <div className="nav-header-title">
+            <Link to="/">NC News Home</Link>
         </div>
     );
 };
