@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Title = () => {
     return (
-        <div className="title">
+        <div className="nav-header-title">
             <Link to="/">NC News Home</Link>
         </div>
     );

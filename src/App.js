@@ -1,8 +1,7 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Stories from "./components/Stories";
-import { Routes, Route } from "react-router-dom";
-import SingleStory from "./components/SingleStory";
 import Story from "./components/Story";
 
 function App() {

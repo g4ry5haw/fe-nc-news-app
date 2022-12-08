@@ -20,7 +20,7 @@ const {topic, title, body} = story
 
     return (
         <div>
-            <div className='singleArticle'>
+            <div className='singleStory'>
                 <h3>{topic}</h3>
                 <h2>{title}</h2>
                 <p>{body}</p> 

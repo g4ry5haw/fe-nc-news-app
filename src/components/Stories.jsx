@@ -15,13 +15,12 @@ useEffect(()=> {
 },[])
 
     return (
-        <div className='articlesList'>
+        <div className='storiesList'>
             {stories.map(({article_id, title, topic, body}) => {
                 return (
-                <div className='articlesList__article' key={article_id}>
+                <div className='storiesList__story' key={article_id}>
                     <h4>{topic}</h4> 
                     <Link to={`/articles/${article_id}`}><h3>{title}</h3></Link>
-                    {/* <h3>{title}</h3> */}
                     <p>{body}</p>
                 </div>
             )})}

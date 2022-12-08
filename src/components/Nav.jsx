@@ -8,13 +8,9 @@ import Topics from "./Topics";
 const Nav = () => {
     return (
         <div className="nav">
-            <div className="nav-title">
-                <div>
-                    <Title />
-                </div>
-                <div>
-                    <Search />
-                </div>
+            <div className="nav-header">
+                <Title />
+                <Search />
             </div>
             <div>
                 <Topics />

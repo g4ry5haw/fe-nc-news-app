@@ -16,13 +16,8 @@ export const getSingleArticle = (article_id) => {
   });
 };
 
-// export const getSingleArticle = (article_id) => {
-//   return newsApi
-//     .get(`/articles/${article_id}`, {
-//       params: { article_id },
-//     })
-//     .then(({ data: { article } }) => {
-//       console.log(article.body);
-//       return article.article;
-//     });
-// };
+export const getArticleComments = (article_id) => {
+  return newsApi.get(`/articles/${article_id}/comments`).then((res) => {
+    return res.data.comments;
+  });
+};
