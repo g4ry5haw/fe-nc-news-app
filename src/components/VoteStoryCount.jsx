@@ -35,7 +35,7 @@ const VoteStoryCount = ({votes}) => {
         if (voteWorked === 0) {
 
             setNewVote((currCount) => {
-                const newCount = currCount + 1
+                const newCount = currCount - 1
                 return newCount
             })
 
