@@ -4,16 +4,16 @@ import { useParams } from 'react-router-dom';
 import "../App.css";
 import { getSingleArticle } from '../utils/api';
 
-const SingleStory = () => {
+const SingleStory = ({story}) => {
 
 const {article_id} = useParams()
-const [story, setStory] = useState([])
+// const [story, setStory] = useState([])
 
-useEffect(()=> {
-    getSingleArticle(article_id).then((fetchedArticle) => {
-        setStory(fetchedArticle);
-    });
-},[article_id])
+// useEffect(()=> {
+//     getSingleArticle(article_id).then((fetchedArticle) => {
+//         setStory(fetchedArticle);
+//     });
+// },[article_id])
 
 const {topic, title, body} = story
 
